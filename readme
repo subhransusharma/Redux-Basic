@@ -1,0 +1,22 @@
+Cake shop scenario      Redux   Purpose
+shop                    Store   Holds the state of your app
+Intention to BUY_CAKE   Action  Describes what happened
+Shopkeeper              Reducer Ties the store to actions
+
+# store action reducer
+Store that holds the state of app
+Action that descibes the changes in the state of the application
+Reducer which carries out the state change depending on the action
+
+# 3 Principles of Redux
+1.The state of the whole app is stored in an object tree within a single store { number of cakes: 10}
+2.Only way to change the state is by emitting an action and describing what happened. {type : BUY_CAKE}
+3.To specify how the state tree is is transformed by actions we use reducers. Reducers - (prevState , action) => newState
+
+# Responsibilities of Store
+Holds application state
+Allows access to state via getState()
+Allows state to be updated via dispatch(action)
+Registers listeners via subscibe(listener)
+
+
